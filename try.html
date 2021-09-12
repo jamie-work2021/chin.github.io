@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 2000px;
+        }
+        .fixed-center{
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%,-50%);
+        }
+
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="fixed-center">
+    <div data-0="transform:scale(1) rotate(0deg);background-color:black;" 
+    data-200="transform:scale(4) rotate(40deg); background-color:lightblue"  
+    data-400="transform:scale(6) rotate(360deg); background-color:lightyellow"  
+    class="box"></div>
+</div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js' integrity='sha512-A2+khatRDWHUE2VUtN4xUTkr1nc4YfDBw9Sg3ea6x0aRPfpcYieDZji4D2edDHy/yF5NsYzP7kL8sSM8s5EqCw==' crossorigin='anonymous'></script>
+    <script type="text/javascript">
+        var s = skrollr.init();
+        </script>
+</body>
+</html>
